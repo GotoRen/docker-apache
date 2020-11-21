@@ -82,7 +82,7 @@ http://localhost:8000/test/test.php
 ================================================
 $ docker-compose stop
 ```
-- DocumentRoot：htdocs/
+- DocumentRoot：htdocs/配下
 - SQL設定場所：db/mysql_init
 - PHPconfig：conf/php.ini
 
