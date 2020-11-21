@@ -1,6 +1,9 @@
 # docker-apache
 ## Overview
 - docker-compose を使用して Apache + MySQL + PHP の実行環境プラットフォームを制作
+- MAMP, XAMPP, LAMPの環境構築をDockerコンテナで行う
+- 以下のコマンドを実行するだけで環境構築を完了できる
+  - 面倒なインストール作業やconfigファイルの書き換えを必要としない
 
 ## Usage
 ```
