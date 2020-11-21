@@ -27,7 +27,7 @@ services:
     container_name: docker-apache-mysql
      
   phpmyadmin:
-    image: phpmyadmin
+    image: phpmyadmin/phpmyadmin
     volumes:
       - ./phpmyadmin/sessions:/sessions
     ports:
