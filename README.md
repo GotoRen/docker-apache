@@ -1,6 +1,6 @@
 # docker-apache
 ## Overview
-- docker-composeを使用して Apache + MySQL + PHP の実行環境プラットフォームを制作
+- docker-compose を使用して Apache + MySQL + PHP の実行環境プラットフォームを制作
 
 ## Usage
 ```
