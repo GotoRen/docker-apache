@@ -1,15 +1,14 @@
 # Docker - for - Apache Web Server
-## 💡Overview
+## 💡 Overview
 - docker-compose を使用して Apache Web Server + MySQL + PHP の実行環境構築ツールを制作
 - MAMP, XAMPP, LAMPの環境構築をDockerコンテナ上で行う
 - 以下のコマンドを実行するだけで Apache Web Server + MySQL + PHP を完了できる
   - Local：）面倒なインストール作業やconfigファイルの書き換えをしずにローカルにWebサーバを立てられる
   - AWS：）デプロイはEC2にDockerをインストールして`docker-compose up`する
-- 挙動がおかしい場合 Pull Request を下さい
 
 ## ⚡ Configure
 - インストール & バージョン情報
-  - Apache/2.4.38 (Debian)
+  - Apache Web Server /2.4.38 (Linux / Debian)
   - MySQL Ver 14.14 Distrib 5.7.27, for Linux (x86_64) using  EditLine wrapper
   - PHP Version 7.2.34
   - phpMyAdmin Version 5.0.4 (最新版)
@@ -36,7 +35,7 @@
        |            |
        |            |--- config
        |            |      |
-       |            |      |--- db_connect.php（DB接続関数）
+       |            |      |--- db_connect.php（コンストラクタ）
        |            |      |--- init.php（DB接続設定ファイル）
        |            |
        |            |--- test.php（テストページ）
@@ -62,8 +61,8 @@
     - PHP-Config：conf/php.ini
       - PHPの設定情報を追加する
 
-## 🚀Usage
-- Dockerコンテナを立てる
+## 🚀 Usage
+- Dockerコンテナを立ててApache Web Server をデプロイ
 - MySQLにテスト用のDBを構築してテーブルを追加する
 - PHPからDBへ接続してデータを取得
 - ブラウザで表示する
@@ -159,10 +158,10 @@
     - 追加されたデータを確認<br>
     ![スクリーンショット 2020-11-22 22 33 48](https://user-images.githubusercontent.com/63791288/99905946-7546bd00-2d17-11eb-8e9e-6c068228ecd1.png)
   - phpMyAdmin：[http://localhost:9000/](http://localhost:9000/)
-    - 保有DBとテーブルを確認<br>
+    - 保有DBとテーブルを確認<br>
     ![スクリーンショット 2020-11-22 22 35 49](https://user-images.githubusercontent.com/63791288/99905953-82fc4280-2d17-11eb-9c51-562839d127e2.png)
 
-## 💣Other
+## 💣 Other
 - コンテナ & Apache Web Server 停止
   - `$ docker-compose stop`  
 - ※ コンテナを削除
