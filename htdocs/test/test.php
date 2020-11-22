@@ -13,7 +13,6 @@ require_once("config/db_connect.php");
     <h3>Test Page.</h3>
 <?php
     try {
-        //$dbh = new PDO('mysql:host=localhost;dbname=test', 'root', 'root');
         $DBConnecter = new DBConnecter();
         $sql = "SELECT * FROM test";
         $stmt = $DBConnecter->pdo->prepare($sql);
